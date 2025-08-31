@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>SpeakEazy Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="sticky-header-container">
+            <p>SpeakEazy<br>Club</p>
+            <nav class="hero-nav">
+                <div class="burger-menu" id="burger-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">what we offer</a></li>
+                    <li><a href="#">members stories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-section-container">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, aliquam ipsa autem aliquid doloremque labore.</p>
+                <button>Lorem, ipsum.</button>
+                <button>Lorem, ipsum.</button>
+                <img src="" alt="">
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navLinks = document.getElementById('nav-links');
+        
+            burgerMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const expanded = burgerMenu.getAttribute('aria-expanded') === 'true';
+                burgerMenu.setAttribute('aria-expanded', !expanded);
+            });
+        });
+    </script>
+</body>
+</html>
